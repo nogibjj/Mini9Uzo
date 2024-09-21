@@ -2,7 +2,7 @@
 Test your library here!
 
 """
-
+import io
 from mylib.lib import (
     load_data,
     plot_pie_chart,
@@ -13,13 +13,18 @@ from mylib.lib import (
     grab_max,
     mini_project_2,
 )
+import io
 
-example_csv = "https://www.kaggle.com/datasets/muhammadehsan02/top-1000-wealthiest-people-in-the-world/data.csv"
+example_csv = "Top_1000_wealthiest_people.csv"
 
 
 def test_load_data():
     """Testing that load data even works"""
-    general_df = load_data(example_csv)
+    test_data = io.StringIO(""" column1,column2
+                            1,2
+                            3,4
+                            """)
+    general_df = load_data(test_data)
     assert general_df is not None
     assert general_df.shape == (1000, 5)
 
@@ -36,3 +41,8 @@ def test_stats():
     assert test_describe.loc["std", "Net Worth (in billions)"] == test_std
     assert test_describe.loc["max", "Net Worth (in billions)"] == test_max
     assert test_describe.loc["min", "Net Worth (in billions)"] == test_min
+
+
+if __name__ "__main__":
+    test_load_data()
+    test_stats()
