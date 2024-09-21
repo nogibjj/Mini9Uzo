@@ -22,8 +22,7 @@ def plot_pie_chart(data_frame):
 # Function to print summary statistics
 def summary_stats(data_frame):
     """This function prints summary statistics."""
-    sum_stats = data_frame.describe()
-    print(sum_stats)
+    return data_frame.describe()
 
 
 # Helper functions
