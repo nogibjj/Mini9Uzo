@@ -11,6 +11,7 @@ CSV_FILE = "Top_1000_wealthiest_people.csv"
 def load_data():
     """This function loads data from a CSV file."""
     data_frame = pd.read_csv(CSV_FILE)
+    print(data_frame.shape)
     return data_frame
 
 
@@ -47,6 +48,11 @@ def grab_min(data_frame, col):
 def grab_std(data_frame, col):
     """This function is meant to grab the standard deviation from the summary stats."""
     return data_frame[col].std()
+
+
+def grab_max(data_frame, col):
+    """This function is meant to grab the maximum networth from the summary stats."""
+    return data_frame[col].max()
 
 
 def mini_project_2():
