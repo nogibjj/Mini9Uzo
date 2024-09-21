@@ -21,6 +21,8 @@ The data we will be analyzing will be from Kaggle.com. We will be analyzing the 
 
 ### Click the link for the Demo Video 
 
+https://youtu.be/kKU0yW3wxLg?si=BNhBrNWFR40EI4DD
+
 ## FINDINGS
 
 See the sample chart below  of percentages of wealth per each industry described in the dataset 
