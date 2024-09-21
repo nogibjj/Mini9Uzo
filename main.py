@@ -1,7 +1,6 @@
 """This code is for main.py; it reads a dataset and prints some summary info about it!"""
 
 import pandas as pd
-import matplotlib.pyplot as plt
 from mylib.lib import load_data, plot_pie_chart, summary_stats
 
 # Constant for the CSV file path

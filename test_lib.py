@@ -7,16 +7,11 @@ import io
 import pandas as pd
 from mylib.lib import (
     load_data,
-    plot_pie_chart,
-    summary_stats,
     grab_mean,
     grab_min,
     grab_std,
     grab_max,
-    mini_project_2,
 )
-from io import StringIO
-import unittest
 
 csv_data = "Top_1000_wealthiest_people.csv"
 
