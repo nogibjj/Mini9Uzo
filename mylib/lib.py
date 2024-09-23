@@ -11,6 +11,8 @@ def load_data(filepath):
 
 # Function to plot a pie chart of net worth distribution by industry
 def plot_pie_chart(data_frame):
+    if type(data_frame) == str:
+        data_frame = pl.read_csv(data_frame)
     print(data_frame)
     """This function plots the pie chart."""
     # Group by industry and sum net worth
@@ -22,6 +24,9 @@ def plot_pie_chart(data_frame):
     print(data_frame)
     # Convert to pandas DataFrame for plotting
     industry_net_worth_pd = data_frame.to_pandas()
+    industry_net_worth_pd = (
+        industry_net_worth_pd.groupby("Industry").sum().reset_index()
+    )
 
     # Plot pie chart
     plt.figure(figsize=(10, 7))

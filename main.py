@@ -14,12 +14,6 @@ def main():
     print(data_frame.shape)
     print(data_frame.describe)
 
-    # Group by industry and sum net worth
-    industry_net_worth = data_frame.group_by("Industry").agg(
-        [pl.col("Net Worth (in billions)").sum()]
-    )
-    print(industry_net_worth)
-
 
 if __name__ == "__main__":
     main()
