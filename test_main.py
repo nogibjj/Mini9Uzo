@@ -1,5 +1,5 @@
 from main import plot_pie_chart, summary_stats
-import pandas as pd
+import polars as pd
 import io
 
 

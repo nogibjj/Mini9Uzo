@@ -4,7 +4,7 @@ Test your library here!
 """
 
 import io
-import pandas as pd
+import polars as pl
 from mylib.lib import (
     load_data,
     grab_mean,
@@ -33,7 +33,7 @@ Telecommunications,135
 Petrochemicals,101
         """
     )
-    general_df = pd.read_csv(csv_data)
+    general_df = pl.read_csv(csv_data)
     assert general_df is not None
     assert general_df.shape == (10, 2)  # 10 Industries and 2 columns
 

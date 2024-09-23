@@ -1,21 +1,33 @@
-import pandas as pd
+import polars as pl
 import matplotlib.pyplot as plt
 
 
 # Function to load data from a CSV file
 def load_data(filepath):
     """This function loads data from a CSV file."""
-    data_frame = pd.read_csv(filepath)
+    data_frame = pl.read_csv(filepath)
     return data_frame
 
 
 # Function to plot a pie chart of net worth distribution by industry
 def plot_pie_chart(data_frame):
     """This function plots the pie chart."""
-    industry_net_worth = data_frame.groupby("Industry")["Net Worth (in billions)"].sum()
-    industry_net_worth.plot(kind="pie", autopct="%1.1f%%")
+    # Group by industry and sum net worth
+    industry_net_worth = data_frame.group_by("Industry").agg(
+        pl.col("Net Worth (in billions)").sum().alias("Total Net Worth (in billions)")
+    )
+
+    # Convert to pandas DataFrame for plotting
+    industry_net_worth_pd = industry_net_worth.to_pandas()
+
+    # Plot pie chart
+    plt.figure(figsize=(10, 7))
+    plt.pie(
+        industry_net_worth_pd["Total Net Worth (in billions)"],
+        labels=industry_net_worth_pd["Industry"],
+        autopct="%1.1f%%",
+    )
     plt.title("Net Worth Distribution by Industry")
-    plt.ylabel("")
     plt.show()
 
 
@@ -47,3 +59,5 @@ def mini_project_2(filepath):
     data_frame = load_data(filepath)
     plot_pie_chart(data_frame)
     summary_stats(data_frame)
+    print(data_frame.shape)
+    print(data_frame.describe)
