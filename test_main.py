@@ -1,5 +1,5 @@
 from main import plot_pie_chart, summary_stats
-import polars as pd
+import polars as pl
 import io
 
 
@@ -22,10 +22,10 @@ Petrochemicals,4336.01
         """
     )
 
-    df = pd.read_csv(csv_data)
+    df = pl.read_csv(csv_data)
     # Check if the data is loaded correctly
-    assert isinstance(df, pd.DataFrame)
-    assert df.shape == (10, 2)  # The DataFrame should have 1000 rows and 5 columns
+    assert isinstance(df, pl.DataFrame)
+    assert df.shape == (11, 2)  # The DataFrame should have 1000 rows and 5 columns
 
 
 def test_plot_pie_chart():
@@ -47,7 +47,7 @@ Petrochemicals,4336.01
         """
     )
 
-    df = pd.read_csv(csv_data)
+    df = pl.read_csv(csv_data)
     # This should run without raising an exception
     plot_pie_chart(df)
 
@@ -71,7 +71,7 @@ Petrochemicals,4336.01
         """
     )
 
-    df = pd.read_csv(csv_data)
+    df = pl.read_csv(csv_data)
     # This should run without raising an exception
     summary_stats(df)
 
