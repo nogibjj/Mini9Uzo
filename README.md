@@ -1,7 +1,6 @@
-# Individual Project 1
-## IDS 706 Week 4 : This is Week 4's Individual Project 
+# Polars Descriptive Data Set !
 
-The purpose of this project is to create a Juypter Notebook that utilizes Pandas to generate descriptive statistics. It establishes an environment on codespaces and uses Github Actions to run a Makefile for : make install, make test, make format, and make lint. It loads the Top Wealthiest data set from Kaggler and utiize a library to run functions that will generate a pie chart as well as some summary statistics about the data.
+The purpose of this project is to create a Juypter Notebook that utilizes Polars  to generate descriptive statistics. It establishes an environment on codespaces and uses Github Actions to run a Makefile for : make install, make test, make format, and make lint. It loads the Top Wealthiest data set from Kaggler and utiize a library to run functions that will generate a pie chart as well as some summary statistics about the data.
 
 ### Important files include
 
@@ -26,12 +25,13 @@ https://youtu.be/kKU0yW3wxLg?si=BNhBrNWFR40EI4DD
 ## FINDINGS
 
 See the sample chart below  of percentages of wealth per each industry described in the dataset 
-![Alt Text](Piechart%20Image.png)
+![Alt Text](outputimage.png)
 
 ### From here we can see that Technology is the most lucrative of indsutries to immerse oneself in... I guess it's a lucky thing that we're studying Data Science! 
 
 ## The summary Statistics are as follows 
 ![Alt Text](Description_of_data.png)
+![Alt Text](Moredescr.png)
 
 
 
