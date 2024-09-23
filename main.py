@@ -1,6 +1,5 @@
 """This code is for main.py; it reads a dataset and prints some summary info about it!"""
 
-import polars as pl
 from mylib.lib import load_data, plot_pie_chart, summary_stats
 
 # Constant for the CSV file path

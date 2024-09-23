@@ -11,7 +11,7 @@ def load_data(filepath):
 
 # Function to plot a pie chart of net worth distribution by industry
 def plot_pie_chart(data_frame):
-    if type(data_frame) == str:
+    if type(data_frame) is str:
         data_frame = pl.read_csv(data_frame)
     print(data_frame)
     """This function plots the pie chart."""
