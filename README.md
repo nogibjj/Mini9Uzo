@@ -1,5 +1,6 @@
 [![Lint](https://github.com/nogibjj/Mini9Uzo/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/Mini9Uzo/actions/workflows/lint.yml)
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)]https://colab.research.google.com/drive/1BquzAsvqQVaUY1GsUJPwor5qsl9jaWaB?usp=sharing 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1BquzAsvqQVaUY1GsUJPwor5qsl9jaWaB?usp=sharing)
+
 
 # Polars Descriptive Data Set hosted on Google Colab! 
 
