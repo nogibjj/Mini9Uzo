@@ -1,4 +1,7 @@
-# Polars Descriptive Data Set !
+# Polars Descriptive Data Set hosted on Google Colab! 
+
+###
+Follow this link for the the cloud-hosted Data Manipulation : 
 
 The purpose of this project is to create a Juypter Notebook that utilizes Polars  to generate descriptive statistics. It establishes an environment on codespaces and uses Github Actions to run a Makefile for : make install, make test, make format, and make lint. It loads the Top Wealthiest data set from Kaggler and utiize a library to run functions that will generate a pie chart as well as some summary statistics about the data.
 
@@ -15,6 +18,8 @@ The purpose of this project is to create a Juypter Notebook that utilizes Polars
 5. A brand new library made specifically for this project 
 
 6. A Jupyter Notebook with all the code formatted separately for use. 
+
+7. A link for the cloud-hosted notebook version of this data manipulation
 
 The data we will be analyzing will be from Kaggle.com. We will be analyzing the top 1000 wealthiest people in the world. (https://www.kaggle.com/datasets/muhammadehsan02/top-1000-wealthiest-people-in-the-world)
 
