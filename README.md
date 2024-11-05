@@ -1,7 +1,10 @@
+[![Lint](https://github.com/nogibjj/Mini9Uzo/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/Mini9Uzo/actions/workflows/lint.yml)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)]https://colab.research.google.com/drive/1BquzAsvqQVaUY1GsUJPwor5qsl9jaWaB?usp=sharing 
+
 # Polars Descriptive Data Set hosted on Google Colab! 
 
 ###
-Follow this link for the the cloud-hosted Data Manipulation : 
+Follow this link for the the cloud-hosted Data Manipulation : https://colab.research.google.com/drive/1BquzAsvqQVaUY1GsUJPwor5qsl9jaWaB?usp=sharing 
 
 The purpose of this project is to create a Juypter Notebook that utilizes Polars  to generate descriptive statistics. It establishes an environment on codespaces and uses Github Actions to run a Makefile for : make install, make test, make format, and make lint. It loads the Top Wealthiest data set from Kaggler and utiize a library to run functions that will generate a pie chart as well as some summary statistics about the data.
 
